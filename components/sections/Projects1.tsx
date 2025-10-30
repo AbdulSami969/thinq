@@ -12,7 +12,7 @@ export default function Projects1() {
         <div className="container">
           <div className="row align-items-end">
             <div className="col-lg-7 me-auto">
-              <h3 className="ds-3 mt-3 mb-3 text-primary-1">My Latest Works</h3>
+              <h3 className="ds-3 mt-3 mb-3 text-primary-1">Our Latest Works</h3>
               <span className="fs-5 fw-medium text-200">
                 I believe that working hard and trying to learn every day will
                 <br />

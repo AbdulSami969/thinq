@@ -23,6 +23,7 @@ export default function Home() {
         <Brands1 />
         <Testimonials1 />
         <Blog1 />
+        
         <Contact1 />
       </Layout>
     </>
