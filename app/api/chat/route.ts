@@ -2,16 +2,16 @@ import OpenAI from "openai";
 import { OpenAIStream, StreamingTextResponse } from "ai";
 import { DataAPIClient } from "@datastax/astra-db-ts";
 
-const { ASTRA_DB_NAMESPACE, ASTRA_DB_COLLECTION, ASTRA_DB_API_ENDPOINT, ASTRA_DB_APPLICATION_TOKEN, OPENAI_API_KEY1 } = process.env;
-const openai = new OpenAI({
-  apiKey: OPENAI_API_KEY1,
-});
-
-const client = new DataAPIClient(ASTRA_DB_APPLICATION_TOKEN);
-const db = client.db(ASTRA_DB_API_ENDPOINT, { namespace: ASTRA_DB_NAMESPACE });
-
 export async function POST(req: Request) {
   try {
+    const { ASTRA_DB_NAMESPACE, ASTRA_DB_COLLECTION, ASTRA_DB_API_ENDPOINT, ASTRA_DB_APPLICATION_TOKEN, OPENAI_API_KEY1 } = process.env;
+    
+    const openai = new OpenAI({
+      apiKey: OPENAI_API_KEY1,
+    });
+
+    const client = new DataAPIClient(ASTRA_DB_APPLICATION_TOKEN);
+    const db = client.db(ASTRA_DB_API_ENDPOINT, { namespace: ASTRA_DB_NAMESPACE });
     const { messages } = await req.json();
     const latestMessage = messages[messages.length - 1].content;
 
@@ -57,5 +57,9 @@ QUESTION: ${latestMessage}
     return new StreamingTextResponse(stream);
   } catch (error) {
     console.log("error: ", error);
+    return new Response(JSON.stringify({ error: "Failed to process chat request" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 }

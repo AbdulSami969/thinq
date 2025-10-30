@@ -52,9 +52,8 @@ export default function Home1() {
         <div className="container position-relative z-3">
           <div className="row">
             <div className="col-lg-6 col-md-12">
-              <span className="text-dark">👋 Hi there, I'm Abdul Sami</span>
               <h1 className="ds-2 mb-3">
-                aka Samdev <br />
+                Thinq <br />
                 <span className="text-primary-1">
                   {titles[currentIndex].substring(0, subIndex)}
                   <span className="cursor">|</span>

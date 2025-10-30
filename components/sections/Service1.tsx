@@ -7,8 +7,12 @@ export default function Service1() {
         <div className="container">
           <div className="row align-items-end">
             <div className="col-lg-12 me-auto">
-              <h3 className="ds-3 mt-3 mb-3 text-primary-1">Who is Samdev?</h3>
-              <i className="fs-10 fw-xl text-200 lene-h">MVP Specialist & Full-Stack Developer — I’m Abdul Sami (Samdev), a results-driven engineer with 5 + years of experience shipping high-impact Minimum Viable Products and scalable platforms. I specialize in the MERN stack, Jamstack, Next.js, and Generative AI, helping startups and enterprises accelerate growth with clean, optimized code and future-proof architecture. A Level 2 Seller on Fiverr and a Top-Rated freelancer on Upwork, I’ve delivered: KIPS LMS — supporting 30 000 + active learners, A company-wide ATS & job portal with article management, Estimation tools for a crane-manufacturing organization and Dozens of high-performance company websites My passion for readable, efficient code and seamless user experiences sets me apart, and I’ve earned the trust of clients across the USA, Australia, Iceland, Canada, and beyond. If you need a partner who turns ideas into polished MVPs—and then scales them with confidence—let's connect.</i>
+              <h3 className="ds-3 mt-3 mb-3 text-primary-1">Who is Thinq?</h3>
+              <i className="fs-10 fw-xl text-200 lene-h">MVP Specialists & Full-Stack Developers — We’re Thinq, a results-driven development studio with over 5+ years of experience building high-impact Minimum Viable Products (MVPs) and scalable platforms. Our expertise spans the MERN stack, Jamstack, Next.js, and Generative AI, enabling us to help startups and enterprises accelerate growth through clean, efficient, and maintainable code.
+
+We’ve delivered projects such as KIPS LMS (serving 30,000+ active learners), a company-wide ATS and job portal with article management, estimation tools for a crane manufacturing organization, and dozens of high-performance corporate websites.
+
+At Thinq, we take pride in writing readable, optimized code and creating seamless user experiences that scale with confidence. Our trusted partnerships span across the USA, Australia, Iceland, Canada, and beyond — helping ideas turn into polished, production-ready MVPs.</i>
             </div>
             {/* <div className="col-lg-auto">
               <Link href="/#contact" className="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
