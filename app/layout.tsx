@@ -28,7 +28,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Samdev | Fullstack Developer Portfolio",
+  title: "Thinq ",
   description: "Explore the portfolio of Samdev, a Fullstack Developer skilled in modern web technologies like React, Next.js, and Node.js.",
   keywords: ["Fullstack Developer", "Web Developer", "React", "Next.js", "Portfolio"],
   metadataBase: new URL("https://yourdomain.com"),
